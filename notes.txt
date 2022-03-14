@@ -1,0 +1,30 @@
+Prerequisites:
+
+--> install docker
+docker 4.5.1 - https://docs.docker.com/desktop/windows/install/ 
+
+--> install mongodb
+mongodb - https://www.mongodb.com/try/download/community 
+
+--> install node 
+node >12.0.1 - https://nodejs.org/en/download/
+npm  >6.0.1
+
+
+Application startup - 
+
+docker-compose -f mongo.yml up -d 	--> execute in root level
+
+it will start mongo docker process
+Then install dependencies for apps,build client app, and start server app.
+Follow the below commands 
+
+cd front-end
+npm i
+npm run build
+cd ../back-end 
+npm i
+npm start
+"navigate to http://localhost:3000" and once we goto this localhost:3000, we will see input for url and submit button.
+
+
